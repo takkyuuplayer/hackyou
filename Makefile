@@ -20,5 +20,7 @@ test:
 composer-install:
 	$(CURL) -s https://getcomposer.org/installer | php
 
+debug:
+	$(PHP) -S 192.168.33.101:8080 -t public/
 help:
 	cat Makefile

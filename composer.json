@@ -4,7 +4,8 @@
     "j4mie/idiorm": "v1.4.1",
     "erusev/parsedown": "~1.5",
     "ext-pdo_sqlite": "*",
-    "ext-pdo_mysql": "*"
+    "ext-pdo_mysql": "*",
+    "slim/slim": "^3.0"
 
   },
   "require-dev": {
@@ -17,7 +18,7 @@
   }],
   "autoload": {
     "psr-4": {
-      "Hackme\\": "lib/"
+      "Hackyou\\": "lib/"
     }
   }
 }
