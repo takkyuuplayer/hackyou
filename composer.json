@@ -5,7 +5,8 @@
     "erusev/parsedown": "~1.5",
     "ext-pdo_sqlite": "*",
     "ext-pdo_mysql": "*",
-    "slim/slim": "^3.0"
+    "slim/slim": "^3.0",
+    "slim/twig-view": "^2.0"
 
   },
   "require-dev": {

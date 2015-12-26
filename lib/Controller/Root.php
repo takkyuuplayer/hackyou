@@ -2,11 +2,11 @@
 
 namespace Hackyou\Controller;
 
-class Root
+class Root extends \Hackyou\Controller
 {
     public function showIndex($request, $response)
     {
-        $response->write('Hello /');
+        $this->container->view->render($response, 'root.html.twig');
         return $response;
     }
 }
