@@ -15,7 +15,7 @@ composer-setup:
 	$(COMPOSER) install
 
 test:
-	./vendor/bin/phpunit --bootstrap vendor/autoload.php tests
+	./vendor/bin/phpunit --bootstrap ./tests/bootstrap.php tests
 
 composer-install:
 	$(CURL) -s https://getcomposer.org/installer | php
