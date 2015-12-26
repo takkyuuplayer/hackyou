@@ -1,11 +1,6 @@
 <?php
-require __DIR__ . '/../vendor/autoload.php';
+define('ROOT_DIR', dirname(__DIR__));
 
-$app = new Slim\App();
-
-$app->get('/hello/{name}', function ($request, $response, $args) {
-      $response->write("Hello, " . $args['name']);
-          return $response;
-});
+require_once ROOT_DIR . '/bootstrap/bootstrap.php';
 
 $app->run();

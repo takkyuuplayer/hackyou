@@ -1,4 +1,5 @@
 <?php
+define('ROOT_DIR', dirname(__DIR__));
 
 // Set timezone
 date_default_timezone_set('America/New_York');
