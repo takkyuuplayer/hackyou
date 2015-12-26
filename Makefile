@@ -6,7 +6,7 @@ else
 COMPOSER=composer
 endif
 
-all: composer-update composer-setup db-setup
+all: composer-update composer-setup
 
 composer-update:
 	$(COMPOSER) self-update
