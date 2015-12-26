@@ -1,0 +1,23 @@
+{
+  "name": "takkyuuplayer/hackme",
+  "require": {
+    "j4mie/idiorm": "v1.4.1",
+    "erusev/parsedown": "~1.5",
+    "ext-pdo_sqlite": "*",
+    "ext-pdo_mysql": "*"
+
+  },
+  "require-dev": {
+    "heroku/heroku-buildpack-php": "*",
+    "phpunit/phpunit": "*"
+  },
+  "authors": [{
+    "name": "takkyuuplayer",
+    "email": "takkyuuplayer@gmail.com"
+  }],
+  "autoload": {
+    "psr-4": {
+      "Hackme\\": "lib/"
+    }
+  }
+}
