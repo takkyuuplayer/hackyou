@@ -48,4 +48,10 @@ class RoutesTest extends PHPUnit_Framework_TestCase
         $res = $this->get('/invalid/path');
         $this->assertEquals(404, $res->getStatusCode());
     }
+
+    public function testShowSQLInjection()
+    {
+        $res = $this->get('/sql-injection/');
+        $this->assertEquals(200, $res->getStatusCode());
+    }
 }

@@ -17,6 +17,8 @@ class App extends \Slim\App
     {
         $this->get('/', '\Hackyou\Controller\Root:showIndex');
 
+        $this->get('/sql-injection/', '\Hackyou\Controller\Root:showSQLInjection');
+
         $this->get('/csrf-01/', '\Hackyou\Controller\Csrf01:showIndex');
         $this->get('/csrf-01/iframe1', '\Hackyou\Controller\Csrf01:showIframe1');
         $this->get('/csrf-01/iframe2', '\Hackyou\Controller\Csrf01:showIframe2');
