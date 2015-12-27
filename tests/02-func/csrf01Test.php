@@ -8,7 +8,7 @@ use Slim\Http\RequestBody;
 use Slim\Http\Response;
 use Slim\Http\Uri;
 
-class RoutesTest extends PHPUnit_Framework_TestCase
+class Csrf01Test extends PHPUnit_Framework_TestCase
 {
 
     public function request($method, $path, $options = array())
