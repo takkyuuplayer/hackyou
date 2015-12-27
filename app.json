@@ -3,11 +3,11 @@
   "description": "Excercise for Web Security",
   "website": "https://www.takkyuuplayer.com/",
   "repository": "https://github.com/takkyuuplayer/hackyou",
-  "image": "heroku/php",
   "env": {
     "HACKME_DOMAIN": {
       "description": "FQDN where hackme working on",
-      "generator": "tp-hackme.herokuapp.com"
+      "value": "tp-hackme.herokuapp.com"
     },
   },
+  "image": "heroku/php"
 }
