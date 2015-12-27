@@ -1,6 +1,9 @@
 <?php
 namespace Hackyou;
 
+use Aptoma\Twig\Extension\MarkdownExtension;
+use Aptoma\Twig\Extension\MarkdownEngine;
+
 class App extends \Slim\App
 {
     public function __construct($container = [])
@@ -32,6 +35,9 @@ class App extends \Slim\App
                 $c['router'],
                 $c['request']->getUri()
             ));
+
+            $engine = new MarkdownEngine\MichelfMarkdownEngine();
+            $view->addExtension(new MarkdownExtension($engine));
 
             return $view;
         };
