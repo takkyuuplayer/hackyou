@@ -20,6 +20,9 @@ class App extends \Slim\App
         $this->get('/csrf-01/', '\Hackyou\Controller\Csrf01:showIndex');
         $this->get('/csrf-01/iframe1', '\Hackyou\Controller\Csrf01:showIframe1');
         $this->get('/csrf-01/iframe2', '\Hackyou\Controller\Csrf01:showIframe2');
+
+        $this->get('/csrf-02/', '\Hackyou\Controller\Csrf02:showIndex');
+        $this->get('/csrf-02/iframe1', '\Hackyou\Controller\Csrf02:showIframe1');
     }
     public function setupRenderer()
     {
