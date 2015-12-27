@@ -7,7 +7,7 @@
     "HACKME_DOMAIN": {
       "description": "FQDN where hackme working on",
       "value": "tp-hackme.herokuapp.com"
-    },
+    }
   },
   "image": "heroku/php"
 }
