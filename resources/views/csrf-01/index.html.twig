@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <title>csrf-01</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    jQuery(function($)
+    {
+      $('body').append('<iframe src="/csrf-01/iframe1"></iframe>');
+      setTimeout(function()
+      {
+        $('body').append('<iframe src="/csrf-01/iframe2"></iframe>');
+      }, 3 * 1000);
+    });
+  </script>
+</body>
+
+</html>

